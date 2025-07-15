@@ -1,5 +1,13 @@
 #!/bin/sh
 
+echo "### Preparation ###"
+apt upgrade -y
+echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/docker.gpg] https://download.docker.com/linux/ubuntu jammy stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt update -y
+
+# install CURL 
+apt install -y curl
+
 echo "###### Install Docker... ######"
 apt-get update  && apt-get install -y ca-certificates curl gnupg lsb-release
 # Add Docker’s official GPG key

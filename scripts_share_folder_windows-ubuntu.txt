@@ -1,5 +1,21 @@
+in the host (Windows)
+
+Before the VM can access the folder, you need to tell VMware to share it:
+
+Power off your VM (if it's running).
+Open VMware Workstation or VMware Player.
+Select your VM → Click Settings.
+Go to the Options tab → Select Shared Folders.
+Set it to Always enabled or Enabled until next power off or suspend.
+Click Add...
+Host path: C:\Users\Pc\Desktop\install_vm
+Name: You can use something like install_vm (this is the name you'll use in .host:<HOST FOLDER>)
+Check Enable this share
+
+in the VM
+
 sudo apt update
 sudo apt install open-vm-tools open-vm-tools-desktop
 sudo reboot
 sudo mkdir -p /mnt/hgfs
-sudo vmhgfs-fuse .host:/<folder> /mnt/hgfs -o allow_other
+sudo vmhgfs-fuse .host:install_vm /mnt/hgfs -o allow_other
