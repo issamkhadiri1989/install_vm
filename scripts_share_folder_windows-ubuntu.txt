@@ -1,0 +1,5 @@
+sudo apt update
+sudo apt install open-vm-tools open-vm-tools-desktop
+sudo reboot
+sudo mkdir -p /mnt/hgfs
+sudo vmhgfs-fuse .host:/<folder> /mnt/hgfs -o allow_other
