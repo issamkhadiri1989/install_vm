@@ -2,7 +2,7 @@
 
 ## Installer les outils nécessaires 
 
-En lancant le script `install.sh` en super-utilisateur sous Ubuntu, tu vas installer: 
+En lancant le script `install.sh` en super-utilisateur (`e.g. sudo ./install.sh`) sous Ubuntu, tu vas installer: 
 
 - Docker & Docker Compose,
 - Make
