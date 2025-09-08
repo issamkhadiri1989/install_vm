@@ -7,6 +7,8 @@ Ce guide vous permettra d'installer votre environnement de travail rapidement et
 
 Avant de commencer, il est important d'avoir une machine virtuelle connectée à Internet et fonctionnant sur une distribution Linux. De préférence **Ubuntu** ou **Debian**, car les commandes contenues dans les fichiers **.sh** sont destinées à ces distributions.
 
+Télécharger ce repo dans votre ordinateur, puis dézippez-le dans l'endroit de votre choix. Les étapes suivantes seront à exécuter dans la racine de ce projet.
+
 # Installation 
 ## Outils nécessaires
 
@@ -72,5 +74,6 @@ Vous allez travailler avec :
 - Docker
 - Composer
 - Make Gnu
+
 
 
